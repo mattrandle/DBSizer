@@ -1,0 +1,197 @@
+﻿<SqlDataTypeDefinitions>
+
+  <SqlDataTypes>
+
+    <SqlDataType>
+      <Name>bigint</Name>
+      <StorageCharacteristics>Fixed</StorageCharacteristics>
+      <UnitStorageSize>8</UnitStorageSize>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>int</Name>
+      <StorageCharacteristics>Fixed</StorageCharacteristics>
+      <UnitStorageSize>4</UnitStorageSize>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>smallint</Name>
+      <StorageCharacteristics>Fixed</StorageCharacteristics>
+      <UnitStorageSize>2</UnitStorageSize>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>tinyint</Name>
+      <StorageCharacteristics>Fixed</StorageCharacteristics>
+      <UnitStorageSize>1</UnitStorageSize>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>bit</Name>
+      <StorageCharacteristics>Fixed</StorageCharacteristics>
+      <UnitStorageSize>1</UnitStorageSize>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>money</Name>
+      <StorageCharacteristics>Fixed</StorageCharacteristics>
+      <UnitStorageSize>8</UnitStorageSize>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>smallmoney</Name>
+      <StorageCharacteristics>Fixed</StorageCharacteristics>
+      <UnitStorageSize>8</UnitStorageSize>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>float</Name>
+      <StorageCharacteristics>Fixed</StorageCharacteristics>
+      <UnitStorageSize>4</UnitStorageSize>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>real</Name>
+      <StorageCharacteristics>Fixed</StorageCharacteristics>
+      <UnitStorageSize>4</UnitStorageSize>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>datetime</Name>
+      <StorageCharacteristics>Fixed</StorageCharacteristics>
+      <UnitStorageSize>8</UnitStorageSize>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>smalldatetime</Name>
+      <StorageCharacteristics>Fixed</StorageCharacteristics>
+      <UnitStorageSize>4</UnitStorageSize>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>timestamp</Name>
+      <StorageCharacteristics>Fixed</StorageCharacteristics>
+      <UnitStorageSize>8</UnitStorageSize>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>uniqueidentifier</Name>
+      <StorageCharacteristics>Fixed</StorageCharacteristics>
+      <UnitStorageSize>16</UnitStorageSize>
+    </SqlDataType>
+
+
+    <SqlDataType>
+      <Name>char</Name>
+      <StorageCharacteristics>FixedByLength</StorageCharacteristics>
+      <UnitStorageSize>1</UnitStorageSize>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>nchar</Name>
+      <StorageCharacteristics>FixedByLength</StorageCharacteristics>
+      <UnitStorageSize>2</UnitStorageSize>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>binary</Name>
+      <StorageCharacteristics>FixedByLength</StorageCharacteristics>
+      <UnitStorageSize>1</UnitStorageSize>
+      <StorageOverhead>4</StorageOverhead>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>decimal</Name>
+      <StorageCharacteristics>FixedByLength</StorageCharacteristics>
+      <UnitStorageSize>1</UnitStorageSize>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>numeric</Name>
+      <StorageCharacteristics>FixedByLength</StorageCharacteristics>
+      <UnitStorageSize>1</UnitStorageSize>
+    </SqlDataType>
+
+
+    <SqlDataType>
+      <Name>varchar</Name>
+      <StorageCharacteristics>Variable</StorageCharacteristics>
+      <UnitStorageSize>2</UnitStorageSize>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>nvarchar</Name>
+      <StorageCharacteristics>Variable</StorageCharacteristics>
+      <UnitStorageSize>2</UnitStorageSize>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>sysname</Name>
+      <StorageCharacteristics>Variable</StorageCharacteristics>
+      <UnitStorageSize>2</UnitStorageSize>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>varbinary</Name>
+      <StorageCharacteristics>Variable</StorageCharacteristics>
+      <UnitStorageSize>2</UnitStorageSize>
+      <StorageOverhead>4</StorageOverhead>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>text</Name>
+      <StorageCharacteristics>Variable</StorageCharacteristics>
+      <UnitStorageSize>1</UnitStorageSize>
+      <StoredExternal>true</StoredExternal>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>ntext</Name>
+      <StorageCharacteristics>Variable</StorageCharacteristics>
+      <UnitStorageSize>2</UnitStorageSize>
+      <StoredExternal>true</StoredExternal>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>nvarcharmax</Name>
+      <StorageCharacteristics>Variable</StorageCharacteristics>
+      <UnitStorageSize>2</UnitStorageSize>
+      <StoredExternal>false</StoredExternal>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>varcharmax</Name>
+      <StorageCharacteristics>Variable</StorageCharacteristics>
+      <UnitStorageSize>1</UnitStorageSize>
+      <StoredExternal>true</StoredExternal>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>varbinarymax</Name>
+      <StorageCharacteristics>Variable</StorageCharacteristics>
+      <UnitStorageSize>1</UnitStorageSize>
+      <StoredExternal>true</StoredExternal>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>image</Name>
+      <StorageCharacteristics>Variable</StorageCharacteristics>
+      <UnitStorageSize>1</UnitStorageSize>
+      <StoredExternal>true</StoredExternal>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>sql_variant</Name>
+      <StorageCharacteristics>Variant</StorageCharacteristics>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>xml</Name>
+      <StorageCharacteristics>Variable</StorageCharacteristics>
+      <UnitStorageSize>2</UnitStorageSize>
+      <StoredExternal>true</StoredExternal>
+    </SqlDataType>
+
+  </SqlDataTypes>
+
+</SqlDataTypeDefinitions>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<xs:schema
+  targetNamespace="http://tempuri.org/XMLSchema.xsd"
+  elementFormDefault="qualified"
+  xmlns="http://tempuri.org/XMLSchema.xsd"
+  xmlns:mstns="http://tempuri.org/XMLSchema.xsd"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:simpleType name="StorageCharacteristicsEnum">
+    <xs:restriction base="xs:string">
+      <!-- Column is a fixed length - requires no additional data from db -->
+      <xs:enumeration value="Fixed" />
+      <!-- Column is a fixed length but depends on defined size -->
+      <xs:enumeration value="FixedByLength" />
+      <!-- Column needs absolute average usage from db -->
+      <xs:enumeration value="Variable" />
+      <!-- Special case -->
+      <xs:enumeration value="Variant" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="SqlDataType">
+    <xs:sequence>
+      <xs:element name="Name" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="StorageCharacteristics" type="StorageCharacteristicsEnum" minOccurs="1" maxOccurs="1" />
+      <xs:element name="UnitStorageSize" type="xs:int" minOccurs="1" maxOccurs="1" />
+      <xs:element name="StorageOverhead" type="xs:int" minOccurs="0" maxOccurs="1" />
+      <xs:element name="StoredExternal" type="xs:boolean" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="SqlDataTypeDefinitions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="SqlDataTypes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SqlDataType" type="SqlDataType" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
