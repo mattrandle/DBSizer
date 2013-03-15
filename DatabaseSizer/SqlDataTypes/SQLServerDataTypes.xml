@@ -63,6 +63,18 @@
     </SqlDataType>
 
     <SqlDataType>
+      <Name>datetime2</Name>
+      <StorageCharacteristics>Fixed</StorageCharacteristics>
+      <UnitStorageSize>8</UnitStorageSize>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>datetimeoffset</Name>
+      <StorageCharacteristics>Fixed</StorageCharacteristics>
+      <UnitStorageSize>10</UnitStorageSize>
+    </SqlDataType>
+
+    <SqlDataType>
       <Name>smalldatetime</Name>
       <StorageCharacteristics>Fixed</StorageCharacteristics>
       <UnitStorageSize>4</UnitStorageSize>
@@ -72,6 +84,18 @@
       <Name>timestamp</Name>
       <StorageCharacteristics>Fixed</StorageCharacteristics>
       <UnitStorageSize>8</UnitStorageSize>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>time</Name>
+      <StorageCharacteristics>Fixed</StorageCharacteristics>
+      <UnitStorageSize>5</UnitStorageSize>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>hierarchyid</Name>
+      <StorageCharacteristics>Fixed</StorageCharacteristics>
+      <UnitStorageSize>5</UnitStorageSize>
     </SqlDataType>
 
     <SqlDataType>
@@ -191,6 +215,20 @@
       <UnitStorageSize>2</UnitStorageSize>
       <StoredExternal>true</StoredExternal>
     </SqlDataType>
+
+    <SqlDataType>
+      <Name>rowversion</Name>
+      <StorageCharacteristics>Fixed</StorageCharacteristics>
+      <UnitStorageSize>8</UnitStorageSize>
+    </SqlDataType>
+
+    <SqlDataType>
+      <Name>geography</Name>
+      <StorageCharacteristics>Variable</StorageCharacteristics>
+      <UnitStorageSize>1</UnitStorageSize>
+      <StoredExternal>true</StoredExternal>
+    </SqlDataType>
+
 
   </SqlDataTypes>
 
