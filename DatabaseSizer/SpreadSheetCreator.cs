@@ -188,7 +188,7 @@ namespace DatabaseSizer
                               workSheet.Cells[indexRow, StartCol + IndexNullBitmapIdx].Address);
 
             workSheet.Cells[indexRow, StartCol + IndexRowsPpIdx].Formula =
-                string.Format("=8096/({0} + 2)", workSheet.Cells[indexRow, StartCol + RowSizeIdx].Address);
+                string.Format("=8096/({0} + 2)", workSheet.Cells[indexRow, StartCol + IndexRowSizeIdx].Address);
 
             var calcSizeFunction = sourceIndex.IsClustered
                                        ? ClusteredIndexSizeFunction

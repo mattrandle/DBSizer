@@ -81,6 +81,12 @@
     </SqlDataType>
 
     <SqlDataType>
+      <Name>date</Name>
+      <StorageCharacteristics>Fixed</StorageCharacteristics>
+      <UnitStorageSize>3</UnitStorageSize>
+    </SqlDataType>
+
+    <SqlDataType>
       <Name>timestamp</Name>
       <StorageCharacteristics>Fixed</StorageCharacteristics>
       <UnitStorageSize>8</UnitStorageSize>
