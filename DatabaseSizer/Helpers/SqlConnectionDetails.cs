@@ -22,7 +22,7 @@ namespace DatabaseSizer.Helpers
         public readonly string ServerName;
 
         /// <summary>
-        ///     Use integrated Windows authentication
+        ///     Use Sql authentication
         /// </summary>
         public readonly bool? UseSqlAuthentication;
 
@@ -70,7 +70,7 @@ namespace DatabaseSizer.Helpers
         public SqlConnectionDetails(string serverName, string userName, string password, string defaultDb)
         {
             this.ServerName = serverName;
-            this.UseSqlAuthentication = false;
+            this.UseSqlAuthentication = true;
             this.Username = userName;
             this.Password = password;
             this.DefaultDatabase = defaultDb;

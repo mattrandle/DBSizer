@@ -113,14 +113,14 @@ namespace DatabaseSizer
         private static Database GetSMODatabase(SqlConnectionDetails connectionInfo)
         {
             ServerConnection serverConnection;
-            if (connectionInfo.UseSqlAuthentication != null && !connectionInfo.UseSqlAuthentication.Value)
-            {
-                serverConnection = new ServerConnection(connectionInfo.ServerName);
-            }
-            else
+            if (connectionInfo.UseSqlAuthentication != null && connectionInfo.UseSqlAuthentication.Value)
             {
                 serverConnection = new ServerConnection(connectionInfo.ServerName, connectionInfo.Username,
                                                         connectionInfo.Password);
+            }
+            else
+            {
+                serverConnection = new ServerConnection(connectionInfo.ServerName);                
             }
 
             var sqlServer = new Server(serverConnection);
@@ -156,11 +156,15 @@ namespace DatabaseSizer
             {
                 this.edUsername.Enabled = false;
                 this.edPassword.Enabled = false;
+                this.lbUsername.Enabled = false;
+                this.lbPassword.Enabled = false;
             }
             else
             {
                 this.edUsername.Enabled = true;
                 this.edPassword.Enabled = true;
+                this.lbUsername.Enabled = true;
+                this.lbPassword.Enabled = true;
             }
         }
     }

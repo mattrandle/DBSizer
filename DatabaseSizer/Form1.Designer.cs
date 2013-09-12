@@ -35,10 +35,10 @@
             this.edServerName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.cbAuthenticationType = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lbUsername = new System.Windows.Forms.Label();
             this.edUsername = new System.Windows.Forms.TextBox();
             this.edPassword = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbPassword = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rbHundred = new System.Windows.Forms.RadioButton();
             this.rbAverages = new System.Windows.Forms.RadioButton();
@@ -110,15 +110,15 @@
             this.cbAuthenticationType.TabIndex = 1;
             this.cbAuthenticationType.SelectedIndexChanged += new System.EventHandler(this.cbAuthenticationType_SelectedIndexChanged);
             // 
-            // label4
+            // lbUsername
             // 
-            this.label4.AutoSize = true;
-            this.label4.Enabled = false;
-            this.label4.Location = new System.Drawing.Point(55, 68);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Username:";
+            this.lbUsername.AutoSize = true;
+            this.lbUsername.Enabled = false;
+            this.lbUsername.Location = new System.Drawing.Point(55, 68);
+            this.lbUsername.Name = "lbUsername";
+            this.lbUsername.Size = new System.Drawing.Size(58, 13);
+            this.lbUsername.TabIndex = 8;
+            this.lbUsername.Text = "Username:";
             // 
             // edUsername
             // 
@@ -133,18 +133,19 @@
             this.edPassword.Enabled = false;
             this.edPassword.Location = new System.Drawing.Point(144, 91);
             this.edPassword.Name = "edPassword";
+            this.edPassword.PasswordChar = '*';
             this.edPassword.Size = new System.Drawing.Size(235, 20);
             this.edPassword.TabIndex = 3;
             // 
-            // label5
+            // lbPassword
             // 
-            this.label5.AutoSize = true;
-            this.label5.Enabled = false;
-            this.label5.Location = new System.Drawing.Point(55, 94);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 13);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Password:";
+            this.lbPassword.AutoSize = true;
+            this.lbPassword.Enabled = false;
+            this.lbPassword.Location = new System.Drawing.Point(55, 94);
+            this.lbPassword.Name = "lbPassword";
+            this.lbPassword.Size = new System.Drawing.Size(56, 13);
+            this.lbPassword.TabIndex = 10;
+            this.lbPassword.Text = "Password:";
             // 
             // groupBox1
             // 
@@ -197,9 +198,9 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.edPassword);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lbPassword);
             this.Controls.Add(this.edUsername);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lbUsername);
             this.Controls.Add(this.cbAuthenticationType);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.edServerName);
@@ -228,10 +229,10 @@
         private System.Windows.Forms.TextBox edServerName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbAuthenticationType;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbUsername;
         private System.Windows.Forms.TextBox edUsername;
         private System.Windows.Forms.TextBox edPassword;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbPassword;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton rbAverages;
         private System.Windows.Forms.RadioButton rbHundred;
