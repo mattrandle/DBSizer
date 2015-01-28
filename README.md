@@ -11,3 +11,5 @@ I tested it against SQL 2005 and 2008 but it should work with 2008 R2 and 2012.
 
 It handles all Sql Server datatypes, including custom, binary, Sql variant, and UDT’s
 
+For more details, see http://mattrandle.me/sql-server-database-size-estimator/
+
